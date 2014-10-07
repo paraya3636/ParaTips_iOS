@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  PDUITableViewController.h
 //  ParaTips
 //
 //  Created by miura on 2014/09/29.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UIViewController
+@interface PDUITableViewController : UIViewController
 <
 UITableViewDelegate,
 UITableViewDataSource

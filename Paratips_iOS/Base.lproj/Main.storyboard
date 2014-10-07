@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6If-xh-GlN">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -41,7 +41,7 @@
                     <navigationItem key="navigationItem" title="Master" id="VfO-fL-hWo"/>
                     <connections>
                         <outlet property="tableView" destination="6If-xh-GlN" id="2bD-dj-gdk"/>
-                        <segue destination="bGS-Gj-EdQ" kind="push" identifier="SEGUE_ID_SHOW_UIKIT" id="XmM-bk-Axw"/>
+                        <segue destination="bGS-Gj-EdQ" kind="push" identifier="SEGUE_ID_SHOW_PDUIKIT_VIEWCONTROLLER" id="XmM-bk-Axw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13g-tg-lLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ST0-gt-dQd">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" title="UIKit" id="oDY-YH-EN3"/>
                     <connections>
                         <outlet property="tableView" destination="ST0-gt-dQd" id="shh-kA-cDp"/>
-                        <segue destination="r22-r2-zmh" kind="push" identifier="SEGUE_ID_SHOW_UITABLEVIEW" id="M2u-nz-64Q"/>
+                        <segue destination="r22-r2-zmh" kind="push" identifier="SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER" id="M2u-nz-64Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aG-Lc-EQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MN8-fa-iUf">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>

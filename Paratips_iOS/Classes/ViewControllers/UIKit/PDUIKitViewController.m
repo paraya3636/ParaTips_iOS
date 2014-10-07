@@ -1,17 +1,17 @@
 //
-//  UIKitViewController.m
+//  PDUIKitViewController.m
 //  ParaTips
 //
 //  Created by miura on 2014/09/29.
 //  Copyright (c) 2014年 Paradrops. All rights reserved.
 //
 
-#import "UIKitViewController.h"
+#import "PDUIKitViewController.h"
 
-NSString* const CELL_ID_UIKIT = @"CELL_ID_UIKIT";
-NSString* const SEGUE_ID_SHOW_UITABLEVIEW = @"SEGUE_ID_SHOW_UITABLEVIEW";
+NSString* const CELL_ID_PDUIKIT = @"CELL_ID_PDUIKIT";
+NSString* const SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER";
 
-@interface UIKitViewController ()
+@interface PDUIKitViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -19,7 +19,7 @@ NSString* const SEGUE_ID_SHOW_UITABLEVIEW = @"SEGUE_ID_SHOW_UITABLEVIEW";
 
 @end
 
-@implementation UIKitViewController
+@implementation PDUIKitViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -56,10 +56,10 @@ NSString* const SEGUE_ID_SHOW_UITABLEVIEW = @"SEGUE_ID_SHOW_UITABLEVIEW";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_UIKIT];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_PDUIKIT];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:CELL_ID_UIKIT];
+                                      reuseIdentifier:CELL_ID_PDUIKIT];
     }
     
     [self updateCell:cell atIndexPath:indexPath];
@@ -75,7 +75,7 @@ NSString* const SEGUE_ID_SHOW_UITABLEVIEW = @"SEGUE_ID_SHOW_UITABLEVIEW";
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:SEGUE_ID_SHOW_UITABLEVIEW sender:self];
+    [self performSegueWithIdentifier:SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER sender:self];
 }
 
 @end

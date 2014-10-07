@@ -1,17 +1,17 @@
 //
-//  MasterViewController.m
+//  PDUITableViewController.m
 //  ParaTips
 //
 //  Created by miura on 2014/09/29.
 //  Copyright (c) 2014年 Paradrops. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "PDUITableViewController.h"
 
-NSString* const CELL_ID_MASTER = @"CELL_ID_MASTER";
-NSString* const SEGUE_ID_SHOW_UIKIT = @"SEGUE_ID_SHOW_UIKIT";
+NSString* const CELL_ID_PDUITABLE = @"CELL_ID_PDUITABLE";
+//NSString* const SEGUE_ID_SHOW_UITABLEVIEW = @"SEGUE_ID_SHOW_UITABLEVIEW";
 
-@interface MasterViewController ()
+@interface PDUITableViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -19,14 +19,14 @@ NSString* const SEGUE_ID_SHOW_UIKIT = @"SEGUE_ID_SHOW_UIKIT";
 
 @end
 
-@implementation MasterViewController
+@implementation PDUITableViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
     [self
      setDataSourceArray:
-     [NSMutableArray arrayWithObjects:@"UIKit",
+     [NSMutableArray arrayWithObjects:@"UITableView",
       nil]];
 }
 
@@ -56,10 +56,10 @@ NSString* const SEGUE_ID_SHOW_UIKIT = @"SEGUE_ID_SHOW_UIKIT";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_MASTER];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_PDUITABLE];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:CELL_ID_MASTER];
+                                      reuseIdentifier:CELL_ID_PDUITABLE];
     }
     
     [self updateCell:cell atIndexPath:indexPath];
@@ -75,7 +75,7 @@ NSString* const SEGUE_ID_SHOW_UIKIT = @"SEGUE_ID_SHOW_UIKIT";
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:SEGUE_ID_SHOW_UIKIT sender:self];
+//    [self performSegueWithIdentifier:SEGUE_ID_SHOW_UITABLEVIEW sender:self];
 }
 
 @end
