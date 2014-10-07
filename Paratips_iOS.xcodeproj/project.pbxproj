@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		692C4812E63DAA6D795E2FCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05F6E55AB88E9CBFBD6521 /* libPods.a */; };
 		D501ABB619E3B07100DEA60A /* PDUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D501ABB519E3B07100DEA60A /* PDUITableViewController.m */; };
+		D501ABC119E3B9DC00DEA60A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D501ABBF19E3B9DC00DEA60A /* Default-568h@2x.png */; };
+		D501ABC219E3B9DC00DEA60A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D501ABC019E3B9DC00DEA60A /* Default@2x.png */; };
 		D5052E9119E39A0C00F7646A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5052E9019E39A0C00F7646A /* main.m */; };
 		D5052E9419E39A0C00F7646A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5052E9319E39A0C00F7646A /* AppDelegate.m */; };
 		D5052E9A19E39A0C00F7646A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5052E9819E39A0C00F7646A /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		D1054F2641942EE3F1B02B9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D501ABB419E3B07100DEA60A /* PDUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUITableViewController.h; sourceTree = "<group>"; };
 		D501ABB519E3B07100DEA60A /* PDUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUITableViewController.m; sourceTree = "<group>"; };
+		D501ABBF19E3B9DC00DEA60A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D501ABC019E3B9DC00DEA60A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D5052E8B19E39A0C00F7646A /* Paratips_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paratips_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5052E8F19E39A0C00F7646A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5052E9019E39A0C00F7646A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +101,23 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
+		D501ABBD19E3B9DC00DEA60A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D501ABBE19E3B9DC00DEA60A /* launchImage */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D501ABBE19E3B9DC00DEA60A /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				D501ABBF19E3B9DC00DEA60A /* Default-568h@2x.png */,
+				D501ABC019E3B9DC00DEA60A /* Default@2x.png */,
+			);
+			path = launchImage;
+			sourceTree = "<group>";
+		};
 		D5052E8219E39A0B00F7646A = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +141,7 @@
 		D5052E8D19E39A0C00F7646A /* Paratips_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D501ABBD19E3B9DC00DEA60A /* Resources */,
 				D548DDB319E3A01E00A8785A /* Classes */,
 				D5052E9219E39A0C00F7646A /* AppDelegate.h */,
 				D5052E9319E39A0C00F7646A /* AppDelegate.m */,
@@ -277,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5052E9A19E39A0C00F7646A /* Main.storyboard in Resources */,
+				D501ABC119E3B9DC00DEA60A /* Default-568h@2x.png in Resources */,
+				D501ABC219E3B9DC00DEA60A /* Default@2x.png in Resources */,
 				D5052E9F19E39A0C00F7646A /* LaunchScreen.xib in Resources */,
 				D5052E9C19E39A0C00F7646A /* Images.xcassets in Resources */,
 			);
@@ -456,7 +480,9 @@
 			baseConfigurationReference = 6833C72C8096C441642FE1C8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Paratips_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -467,7 +493,9 @@
 			baseConfigurationReference = D1054F2641942EE3F1B02B9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Paratips_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
