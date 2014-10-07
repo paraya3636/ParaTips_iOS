@@ -25,7 +25,7 @@
         <!--Master-->
         <scene sceneID="vkp-oK-k42">
             <objects>
-                <viewController id="K4P-8z-jkc" customClass="MasterViewController" sceneMemberID="viewController">
+                <viewController id="K4P-8z-jkc" customClass="PDMasterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="boN-7l-uLc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
         <!--UIKit-->
         <scene sceneID="P34-Cd-0je">
             <objects>
-                <viewController id="bGS-Gj-EdQ" customClass="UIKitViewController" sceneMemberID="viewController">
+                <viewController id="bGS-Gj-EdQ" customClass="PDUIKitViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XaZ-f1-LFe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="775.20000000000005" y="-296.30666666666667"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="erY-Xa-mvj">
             <objects>
-                <viewController id="r22-r2-zmh" sceneMemberID="viewController">
+                <viewController id="r22-r2-zmh" customClass="PDUITableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEY-dI-5ak">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
