@@ -1,17 +1,17 @@
 //
-//  PDUITableViewController.m
+//  PDUITableViewCellViewController.m
 //  ParaTips
 //
 //  Created by miura on 2014/09/29.
 //  Copyright (c) 2014年 Paradrops. All rights reserved.
 //
 
-#import "PDUITableViewController.h"
+#import "PDUITableViewCellViewController.h"
 
-NSString* const CELL_ID_PDUITABLEVIEW = @"CELL_ID_PDUITABLEVIEW";
+NSString* const CELL_ID_PDUITABLEVIEWCELL = @"CELL_ID_PDUITABLEVIEWCELL";
 //NSString* const SEGUE_ID_SHOW_UITABLEVIEW = @"SEGUE_ID_SHOW_UITABLEVIEW";
 
-@interface PDUITableViewController ()
+@interface PDUITableViewCellViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -19,14 +19,14 @@ NSString* const CELL_ID_PDUITABLEVIEW = @"CELL_ID_PDUITABLEVIEW";
 
 @end
 
-@implementation PDUITableViewController
+@implementation PDUITableViewCellViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
     [self
      setDataSourceArray:
-     [NSMutableArray arrayWithObjects:@"UITableView",
+     [NSMutableArray arrayWithObjects:@"UIImageView animation on Cell",
       nil]];
 }
 
@@ -56,10 +56,10 @@ NSString* const CELL_ID_PDUITABLEVIEW = @"CELL_ID_PDUITABLEVIEW";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_PDUITABLEVIEW];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_PDUITABLEVIEWCELL];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:CELL_ID_PDUITABLEVIEW];
+                                      reuseIdentifier:CELL_ID_PDUITABLEVIEWCELL];
     }
     
     [self updateCell:cell atIndexPath:indexPath];

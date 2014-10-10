@@ -9,13 +9,15 @@
 #import "PDUIKitViewController.h"
 
 NSString* const CELL_ID_PDUIKIT = @"CELL_ID_PDUIKIT";
+
 NSString* const SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER";
+NSString* const SEGUE_ID_SHOW_PDUITABLECELL_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDUITABLECELL_VIEWCONTROLLER";
 
 @interface PDUIKitViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (copy, nonatomic) NSMutableArray* dataSourceArray;
+@property (nonatomic) NSMutableArray* dataSourceArray;
 
 @end
 
@@ -24,10 +26,10 @@ NSString* const SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDUITAB
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    [self
-     setDataSourceArray:
-     [NSMutableArray arrayWithObjects:@"UITableView",
-      nil]];
+    [self setDataSourceArray:[NSMutableArray arrayWithObjects:
+                              @"UITableView",
+                              @"UITableViewCell",
+                              nil]];
 }
 
 - (void)viewDidLoad {
@@ -75,7 +77,16 @@ NSString* const SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDUITAB
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER sender:self];
+    switch ([indexPath row]) {
+        case 0:
+            [self performSegueWithIdentifier:SEGUE_ID_SHOW_PDUITABLE_VIEWCONTROLLER sender:self];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:SEGUE_ID_SHOW_PDUITABLECELL_VIEWCONTROLLER sender:self];
+            break;
+        default:
+            break;
+    }
 }
 
 @end

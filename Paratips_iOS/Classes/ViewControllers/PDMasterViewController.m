@@ -15,7 +15,7 @@ NSString* const SEGUE_ID_SHOW_PDUIKIT_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDUIKIT_V
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (copy, nonatomic) NSMutableArray* dataSourceArray;
+@property (nonatomic) NSMutableArray* dataSourceArray;
 
 @end
 

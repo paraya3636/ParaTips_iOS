@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		692C4812E63DAA6D795E2FCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05F6E55AB88E9CBFBD6521 /* libPods.a */; };
+		CA54B7E519E6EA060077BEC5 /* PDUITableViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA54B7E419E6EA060077BEC5 /* PDUITableViewCellViewController.m */; };
 		D501ABB619E3B07100DEA60A /* PDUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D501ABB519E3B07100DEA60A /* PDUITableViewController.m */; };
 		D501ABC119E3B9DC00DEA60A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D501ABBF19E3B9DC00DEA60A /* Default-568h@2x.png */; };
 		D501ABC219E3B9DC00DEA60A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D501ABC019E3B9DC00DEA60A /* Default@2x.png */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		6833C72C8096C441642FE1C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8E05F6E55AB88E9CBFBD6521 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA54B7E319E6EA060077BEC5 /* PDUITableViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUITableViewCellViewController.h; sourceTree = "<group>"; };
+		CA54B7E419E6EA060077BEC5 /* PDUITableViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUITableViewCellViewController.m; sourceTree = "<group>"; };
 		D1054F2641942EE3F1B02B9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D501ABB419E3B07100DEA60A /* PDUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUITableViewController.h; sourceTree = "<group>"; };
 		D501ABB519E3B07100DEA60A /* PDUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUITableViewController.m; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 				D1054F2641942EE3F1B02B9B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA54B7DF19E6E7870077BEC5 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA54B7E319E6EA060077BEC5 /* PDUITableViewCellViewController.h */,
+				CA54B7E419E6EA060077BEC5 /* PDUITableViewCellViewController.m */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 		D501ABB319E3AC9200DEA60A /* UITableView */ = {
@@ -201,6 +213,7 @@
 		D548DDB719E3A01E00A8785A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CA54B7DF19E6E7870077BEC5 /* UITableViewCell */,
 				D501ABB319E3AC9200DEA60A /* UITableView */,
 				D548DDB819E3A01E00A8785A /* PDUIKitViewController.h */,
 				D548DDB919E3A01E00A8785A /* PDUIKitViewController.m */,
@@ -355,6 +368,7 @@
 			files = (
 				D5052E9419E39A0C00F7646A /* AppDelegate.m in Sources */,
 				D548DDBC19E3A01E00A8785A /* PDUIKitViewController.m in Sources */,
+				CA54B7E519E6EA060077BEC5 /* PDUITableViewCellViewController.m in Sources */,
 				D501ABB619E3B07100DEA60A /* PDUITableViewController.m in Sources */,
 				D548DDBB19E3A01E00A8785A /* PDMasterViewController.m in Sources */,
 				D5052E9119E39A0C00F7646A /* main.m in Sources */,
