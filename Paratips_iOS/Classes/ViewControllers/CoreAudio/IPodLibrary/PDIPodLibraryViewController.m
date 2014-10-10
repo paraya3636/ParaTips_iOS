@@ -8,8 +8,9 @@
 
 #import "PDIPodLibraryViewController.h"
 
-NSString* const CELL_ID_PDCOREAUDIO = @"CELL_ID_PDCOREAUDIO";
-NSString* const SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER";
+NSString* const CELL_ID_PDIPODLIBRARY = @"CELL_ID_PDIPODLIBRARY";
+
+//NSString* const SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER";
 
 @interface PDIPodLibraryViewController ()
 
@@ -59,10 +60,10 @@ NSString* const SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDI
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_PDCOREAUDIO];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_PDIPODLIBRARY];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:CELL_ID_PDCOREAUDIO];
+                                      reuseIdentifier:CELL_ID_PDIPODLIBRARY];
     }
     
     [self updateCell:cell atIndexPath:indexPath];
@@ -94,7 +95,7 @@ NSString* const SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER = @"SEGUE_ID_SHOW_PDI
     }
     
     
-    [self performSegueWithIdentifier:SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER sender:self];
+//    [self performSegueWithIdentifier:SEGUE_ID_SHOW_PDIPODLIBRARY_VIEWCONTROLLER sender:self];
 }
 
 @end
