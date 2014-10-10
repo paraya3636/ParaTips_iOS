@@ -17,6 +17,8 @@
 		D5052E9C19E39A0C00F7646A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5052E9B19E39A0C00F7646A /* Images.xcassets */; };
 		D5052E9F19E39A0C00F7646A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5052E9D19E39A0C00F7646A /* LaunchScreen.xib */; };
 		D5052EAB19E39A0C00F7646A /* Paratips_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5052EAA19E39A0C00F7646A /* Paratips_iOSTests.m */; };
+		D543729A19E7914100272F80 /* PDCoreAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D543729919E7914100272F80 /* PDCoreAudioViewController.m */; };
+		D543729E19E7970500272F80 /* PDIPodLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D543729D19E7970500272F80 /* PDIPodLibraryViewController.m */; };
 		D548DDBB19E3A01E00A8785A /* PDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D548DDB619E3A01E00A8785A /* PDMasterViewController.m */; };
 		D548DDBC19E3A01E00A8785A /* PDUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D548DDB919E3A01E00A8785A /* PDUIKitViewController.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,10 @@
 		D5052EA419E39A0C00F7646A /* Paratips_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Paratips_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5052EA919E39A0C00F7646A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5052EAA19E39A0C00F7646A /* Paratips_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paratips_iOSTests.m; sourceTree = "<group>"; };
+		D543729819E7914100272F80 /* PDCoreAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCoreAudioViewController.h; sourceTree = "<group>"; };
+		D543729919E7914100272F80 /* PDCoreAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCoreAudioViewController.m; sourceTree = "<group>"; };
+		D543729C19E7970500272F80 /* PDIPodLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDIPodLibraryViewController.h; sourceTree = "<group>"; };
+		D543729D19E7970500272F80 /* PDIPodLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDIPodLibraryViewController.m; sourceTree = "<group>"; };
 		D548DDB519E3A01E00A8785A /* PDMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDMasterViewController.h; path = ViewControllers/PDMasterViewController.h; sourceTree = "<group>"; };
 		D548DDB619E3A01E00A8785A /* PDMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDMasterViewController.m; path = ViewControllers/PDMasterViewController.m; sourceTree = "<group>"; };
 		D548DDB819E3A01E00A8785A /* PDUIKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUIKitViewController.h; sourceTree = "<group>"; };
@@ -179,6 +185,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D543729619E7914100272F80 /* CoreAudio */ = {
+			isa = PBXGroup;
+			children = (
+				D543729B19E7970500272F80 /* IPodLibrary */,
+				D543729819E7914100272F80 /* PDCoreAudioViewController.h */,
+				D543729919E7914100272F80 /* PDCoreAudioViewController.m */,
+			);
+			path = CoreAudio;
+			sourceTree = "<group>";
+		};
+		D543729B19E7970500272F80 /* IPodLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D543729C19E7970500272F80 /* PDIPodLibraryViewController.h */,
+				D543729D19E7970500272F80 /* PDIPodLibraryViewController.m */,
+			);
+			path = IPodLibrary;
+			sourceTree = "<group>";
+		};
 		D548DDB319E3A01E00A8785A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +218,7 @@
 		D548DDB419E3A01E00A8785A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D543729619E7914100272F80 /* CoreAudio */,
 				D548DDB719E3A01E00A8785A /* UIKit */,
 			);
 			path = ViewControllers;
@@ -353,7 +379,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D543729A19E7914100272F80 /* PDCoreAudioViewController.m in Sources */,
 				D5052E9419E39A0C00F7646A /* AppDelegate.m in Sources */,
+				D543729E19E7970500272F80 /* PDIPodLibraryViewController.m in Sources */,
 				D548DDBC19E3A01E00A8785A /* PDUIKitViewController.m in Sources */,
 				D501ABB619E3B07100DEA60A /* PDUITableViewController.m in Sources */,
 				D548DDBB19E3A01E00A8785A /* PDMasterViewController.m in Sources */,
